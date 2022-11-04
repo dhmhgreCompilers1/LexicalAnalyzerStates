@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="TestFiles">
+      <UniqueIdentifier>{15754879-cf6a-45b7-9060-1750d44d3281}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Flex Include="Comments.l">
@@ -23,5 +26,13 @@
     <ClCompile Include="Comments.flex.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="output.txt">
+      <Filter>TestFiles</Filter>
+    </Text>
+    <Text Include="test.txt">
+      <Filter>TestFiles</Filter>
+    </Text>
   </ItemGroup>
 </Project>
