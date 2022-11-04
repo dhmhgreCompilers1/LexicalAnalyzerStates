@@ -441,7 +441,11 @@ int yy_flex_debug = 0;
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
 #line 1 "Comments.l"
-#line 444 "Comments.flex.cpp"
+#line 4 "Comments.l"
+#include <stdio.h>
+#include <stdlib.h>
+#line 447 "Comments.flex.cpp"
+#line 448 "Comments.flex.cpp"
 
 #define INITIAL 0
 
@@ -655,12 +659,12 @@ YY_DECL
 		}
 
 	{
-#line 3 "Comments.l"
+#line 8 "Comments.l"
 
 
 
 
-#line 663 "Comments.flex.cpp"
+#line 667 "Comments.flex.cpp"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -719,10 +723,10 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 7 "Comments.l"
+#line 12 "Comments.l"
 ECHO;
 	YY_BREAK
-#line 725 "Comments.flex.cpp"
+#line 729 "Comments.flex.cpp"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1727,8 +1731,12 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 7 "Comments.l"
+#line 12 "Comments.l"
 
 
 void main(){
+	FILE * fp; 
+	fopen_s(&fp,"test.txt","r");
+	yyin =fp;
+	yylex();
 }
